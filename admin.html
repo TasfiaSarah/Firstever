@@ -1,18 +1,16 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zxx">
 
 <head>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
     <meta charset="UTF-8">
-    <meta name="description" content="Emergency Buddy">
+    <meta name="description" content="Fashi Template">
     <meta name="keywords" content="Fashi, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ঝটপট ঔষধ</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
@@ -27,8 +25,25 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+<script src="js/main.js"></script>
 
-<body class="colourr">
+<script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyAsg-Nh7RcxGWjfvsX1WYDgljltYQVNoic",
+    authDomain: "jhotpot-oshudh.firebaseapp.com",
+    databaseURL: "https://jhotpot-oshudh-default-rtdb.firebaseio.com",
+    projectId: "jhotpot-oshudh",
+    storageBucket: "jhotpot-oshudh.appspot.com",
+    messagingSenderId: "712890956632",
+    appId: "1:712890956632:web:97a637bdf1d93af781832d",
+    measurementId: "G-SQ3YWB1HES"
+  };
+
+  // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+</script>
+
+<body>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -49,35 +64,35 @@
                 <div class="advanced-search ms-auto" >
               
                       
-                     <div class="input-group w-50  mx-auto"> 
-                        <input type="text" placeholder="Search for the medicine you want">
-                        <button type="button"><a href="./search.html"></a><i class="ti-search"></i> </a></button>
-                    </div> 
+                    
                 </div>
-            </div></div></div>
+            </div>
+        </div>
+    </div>
 
 
 <header class="header-section">
 
+            </div>
+        </div>
+    </div>
     <div class="nav-item">
         <div class="container">
             <div class="nav-depart">
-           
+                
             </div>  
             <nav class="nav-menu mobile-menu">
                 <ul>
-                    <li ><a href="./index2.html">Home</a></li>
-                    <li><a href="./service2.html">Our Services</a></li>
-                    <li><a href="./contact2.html">Contact Us</a></li>
-                    <li><a href="./map2.html">People near you</a></li>
-                    <li> <a href="./profile.html">profile</a>
-                        <ul class="dropdown">
-                            <li class="active"><a href="./profile.html">My profile</a></li>
-                            <li><a href="./check-out.html">Checkout</a></li>
-                            <li><a href="./login.html">Sign-out</a></li>
-                            
-                        </ul>
-                    </li> 
+                    <!-- <li ><a href="./index.html">Home</a></li> -->
+                        <!-- <li><a href="./service.html">Our Services</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li> -->
+                        
+                        <li class="active"> <a href="./admin.html">Admin Panel</a>
+                            <ul class="dropdown">
+                                <li><a href="./admin2.html">Requests</a></li>
+                                <li><a href="./login.html">Sign out</a></li>
+                            </ul>
+                        </li>
                 </ul>
             </nav>
             <div id="mobile-menu-wrap"></div>
@@ -86,22 +101,23 @@
 </header>
     <!-- Header End -->
 
-    
+    <!-- Breadcrumb Section Begin -->
     <div class="breacrumb-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="breadcrumb-text product-more">
-                        <a href="./home.html"><i class="fa fa-home"></i> Home</a>
-                        
-                        <span>My Profile</span>
+                    <div class="breadcrumb-text">
+                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                        <span>Admin</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+    <!-- Breadcrumb Form Section Begin -->
 
+    <!-- Register Section Begin -->
+    
     <div class="container emp-profile ">
         <form method="post">
             <div class="row">
@@ -131,11 +147,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <!-- <a href="./index.html"><input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/></a> -->
-                    <a href="./Edit_profile.html"  type="submit" class="profile-edit-btn" role="button" 
-                    aria-pressed="true">Edit Profile</a>
-                </div>
+              
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -176,22 +188,7 @@
                                             <p>tasfiasara1000@gmail.com</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Phone</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>123 456 7890</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Profession</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>Student</p>
-                                        </div>
-                                    </div>
+                                    
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                     <div class="row">
@@ -234,12 +231,7 @@
                                             <p>6 months</p>
                                         </div>
                                     </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label>Your Bio</label><br/>
-                                    <p>Your detail description</p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -247,10 +239,9 @@
         </form>           
     </div>
     
-    
-    
-   <!-- Footer Section Begin -->
-   <footer class="footer-section">
+    <!-- Register Form Section End -->
+  <!-- Footer Section Begin -->
+  <footer class="footer-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
@@ -289,33 +280,23 @@
                       </div>
                 </div>
             </div>
-            <!-- <div class="col-lg-4">
-                <div class="newslatter-item">
-
-                    <form action="#" class="subscribe-form">
-                        <input type="text" placeholder="Enter Your name">
-                        <button type="button">Subscribe</button>
-                    </form>
-                </div>
-            </div> -->
+        
         </div>
     </div>
     <div class="copyright-reserved">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="copyright-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                         All rights reserved </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="copyright-text2">Designed by Tasfia Akter Sara </div>
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <h4>Designed by Tasfia Akter Sara</h4>
+                    </div>
+                
                 </div>
             </div>
         </div>
     </div>
 </footer>
 <!-- Footer Section End -->
-
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -328,6 +309,8 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    
+    
 </body>
 
 </html>

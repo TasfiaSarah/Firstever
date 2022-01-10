@@ -9,6 +9,52 @@
 
 'use strict';
 
+
+
+    function show() {
+
+        var name = document.getElementById("name").value;
+        var email= document.getElementById("email").value;
+        var message= document.getElementById("message").value;
+    
+         firebase.database().ref('User/' + email).set({ 
+                name : name, //firebase er key: amar variable upore j declare korlam
+                email : email,
+                mesaage:message
+              }, function(error) {
+                if (error) {
+                  // The write failed...
+                } else {
+                    alert("DONE");
+                  
+               
+                }
+              });
+        getcomments();
+     }
+     function getcomments() {
+        if(document.getElementById('commentsloaded') == null) return;
+        //console.log('inside rendercomments');
+        firebase.database().ref('User/').once('value').then(function(snapshot) {
+            document.getElementById('commentsloaded').innerHTML = "";
+            snapshot.forEach(function(child) {
+                document.getElementById('nocomments').style.display = "none";
+                //console.log(child.val().userid + " " + child.val().date + " " + child.val().comment);
+                var default_comment = document.getElementById('default-comment').cloneNode(true);
+                default_comment.children[0].children[0].innerHTML = child.val().name;
+                default_comment.children[0].children[1].innerHTML = child.val().name;
+                default_comment.children[1].innerHTML = child.val().mesaage;
+                default_comment.style.display = "block";
+                document.getElementById('commentsloaded').appendChild(default_comment);
+            });
+            }, function(error) {
+                if (error) {
+                } else {
+
+                }
+        });
+     }
+
 (function ($) {
 
     /*------------------
@@ -17,6 +63,7 @@
     $(window).on('load', function () {
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
+        getcomments();
     });
 
     /*------------------

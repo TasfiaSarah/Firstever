@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
@@ -23,6 +24,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+   
 </head>
 
 <body >
@@ -30,7 +32,9 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
- <!-- Header Section Begin -->
+     <!-- Header Section Begin -->
+    <header class="header-section ">
+
         <div class="inner-header " >
             <div class="row">
                 <div class="col-lg-6 col-md-4 col-sm-12">
@@ -50,10 +54,10 @@
                             <button type="button"><a href="./search.html"></a><i class="ti-search"></i> </a></button>
                         </div> 
                     </div>
-                </div></div></div>
+                </div>
+            </div>
+        </div>
   
-    
-    <header class="header-section">
 
         <div class="nav-item">
             <div class="container">
@@ -73,12 +77,11 @@
                         </ul> 
                     </div> -->
                 </div>  
-                <nav class="nav-menu mobile-menu">
+                <nav class="nav-menu mobile-menu ">
                     <ul>
                         <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="./service.html">Our Services</a></li>
+                        <li><a href="/index.html#servicesss">Our Services</a></li>
                         <li><a href="./contact.html">Contact Us</a></li>
-                        <li><a href="./register.html">Register</a></li>
                         <li><a href="./login.html">Log in</a></li>
                         <!-- <li><a href="#">Pages</a>
                             <ul class="dropdown">
@@ -99,12 +102,12 @@
     <!-- Header End -->
 
     <!-- Hero Section Begin -->
-    <section class="hero-section">
+    <section class="hero-section" >
         <div class="hero-items owl-carousel">
-            <div class="single-hero-items set-bg" data-setbg="img/hero-1.jpg">
-                <div class="container">
+            <div class="single-hero-items set-bg" data-setbg="img/hero-1.jpg" >  <!-- -->
+                <div class="container Back">
                     <div class="row">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5"  > <!-- id="Backg" -->
                             <span>24/7 service</span>
                             <h1>Get your medicine</h1>
                              <p>Getting the right medicines at the right time is a savior.
@@ -123,8 +126,8 @@
             <div class="single-hero-items set-bg" data-setbg="img/hero-2.jpg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5">
-                            <span>24/7 service</span>
+                        <div class="col-lg-5" > <!-- id="Backg" -->
+                            <span>24/7 service</span> 
                             <h1>Get your medicine</h1>
                             <p>Don't have pharmacies nearby? We've got your back.Search for your medicine 
                                 and see who has the medicine in your area,contact with them and collect! Simple.</p> 
@@ -143,9 +146,9 @@
     <!-- Service Section Begin -->
 
 
-    <div class="services">
+    <div class="services" id="servicesss">
         <div class="container">
-          <div class="s fw-bold"><h1>Our Services</h1></div>
+          <div class="s"><h1>Our Services</h1></div>
         </div>
     </div>
 
@@ -154,58 +157,15 @@
 
 
 
-    <!-- card begins -->
-    <!-- <div class="row row-cols-1 row-cols-md-2 g-4   service-card">
-        <div class="col mx-auto">
-          <div class="card " >
-            <img src="img/service-1.jpg"  class="card-img-top"  alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text">24/7 availability.You can search for any medicine at anytime.
-                We'll connect you to your nearest available location(pharmacy/neighbour).</p>
-            </div>
-          </div>
-        </div>
-        <div class="col ">
-          <div class="card ">
-            <img src="img/service-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text">saves your time and money.The price of the medicine will be at its actual price.Also,
-                  you don't have to go out every time you need medicine.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col mx-auto">
-          <div class="card ">
-            <img  src="img/service-3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text">Even if you can't find your medicine,you can notify everyone near you,
-                thus they can contact with you if they have it.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/service-4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text"> You can also contribute to help others by giving others their desired mecidine,
-                if it is available to you.As we know-sharing is caring.</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      
-      <!--card end  -->
-      <div style="padding-top: 10px ; background-image: linear-gradient(rgba(31, 30, 29, 0.856),rgba(235, 109, 5, 0.568), rgba(255, 166, 0, 0.856),
-      rgba(31, 30, 29, 0.856)) " >
-      <section class="container-lg pb-5 " >
-        
+    <div  class="cardings" > <!--background: linear-gradient( 180dg,rgba(235, 174, 5, 0.568),rgba(245, 244, 243, 0.568),rgba(235, 174, 5, 0.568)) -->
+      <section class="container-lg pb-5  " >
+        <!-- <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+        data-aos-delay="300" data-aos-offset="0"> -->
         <div class="row row-cols-1 row-cols-md-2 g-4 py-4 ">
           <div class="col">
+            <a href="/search.html" class="card-button">
+       
+
             <div class="card h-100">
               <img
                 class="p-3"
@@ -215,31 +175,16 @@
               />
               <div class="card-body">
                 <h5 class="card-title"></h5>
-                <p class="card-text">
-                    24/7 availability.You can search for any medicine at anytime.
-                    We'll connect you to your nearest available location(pharmacy/neighbour).
-                </p>
+                <p class="card-text">Search for your medicine.</p>
               </div>
             </div>
+        
+        
+            </a>
           </div>
           <div class="col">
-            <div class="card h-100">
-              <img
-                class="p-3"
-                src="img/service-2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-               
-                <p class="card-text">Saves your time and money.The price of the medicine will be at its actual price.Also,
-                    you don't have to go out every time you need medicine.
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
+            <a href="/MedicineList.html" class="card-button">
+
             <div class="card h-100">
               <img
                 class="p-3"
@@ -248,16 +193,33 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">
-                    Even if you can't find your medicine,you can notify everyone near you,
-                    thus they can contact with you if they have it.
+               
+                <p class="card-text">Medicine List.
+                  
                 </p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/login.html" class="card-button">
+            <div class="card h-100">
+              <img
+                class="p-3"
+                src="img/service-2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">Notify everyone what you need.
                 
               </div>
             </div>
-          </div>
+            </a>
+        </div>
           <div class="col">
+            <a href="/login.html" class="card-button">
             <div class="card h-100">
               <img
                 class="p-3"
@@ -268,14 +230,15 @@
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text">
-                    You can also contribute to help others by giving others their desired mecidine,
-                    if it is available to you.As we know-sharing is caring.
+                   Find people near you
                 </p>
                 
               </div>
             </div>
+            </a>
           </div>
         </div>
+    
       </section>
     </div>
      <!-- Service Section end -->
@@ -743,7 +706,7 @@
     <!-- slider Section Begin -->
     <div class="partner-logo">
         <div class="container">
-            <marquee direction="right" scrollamount="14" > <div class="Reg"><h2>Register now to enjoy the service! </h2></div></marquee>
+            <marquee direction="right" scrollamount="15" > <div class="Reg"><h2>Register now to enjoy the service! </h2></div></marquee>
            
         </div>
     </div> 
@@ -782,33 +745,25 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="footer-widget">
-                        <h5>My Account</h5>
-                        <ul>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Order now</a></li>
-                            <li><a href="#">Search</a></li>
-                        </ul>
+                        <h5>Our Location</h5>
+                        <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 140px">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.4620796078316!2d90.355703014983!3d23.83772008454649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1410136a4dd%3A0x7a2bb9d68ea2166e!2sMilitary%20Institute%20of%20Science%20and%20Technology%20(MIST)!5e0!3m2!1sen!2sbd!4v1639947666333!5m2!1sen!2sbd" 
+                            width="320" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                          </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4">
-                    <div class="newslatter-item">
-    
-                        <form action="#" class="subscribe-form">
-                            <input type="text" placeholder="Enter Your name">
-                            <button type="button">Subscribe</button>
-                        </form>
-                    </div>
-                </div> -->
+                
             </div>
         </div>
         <div class="copyright-reserved">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-text">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed by Tasfia Akter Sara
-                        </div>
-                    
+                    <div class="col-lg-6">
+                        <div class="copyright-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                             All rights reserved </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="copyright-text2">Designed by Tasfia Akter Sara </div>
                     </div>
                 </div>
             </div>
@@ -827,6 +782,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
