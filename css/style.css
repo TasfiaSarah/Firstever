@@ -831,12 +831,12 @@ ol {
 	right: 0;
 	top: 82px;
 	width: 200px;
-	z-index: 99;
+	z-index: 1000;
 	background: #252525;
 	opacity: 0;
 	visibility: hidden;
-	/* -webkit-transition: all 0.3s;
-	-o-transition: all 0.3s; */
+	 -webkit-transition: all 0.3s;
+	-o-transition: all 0.3s; 
 	transition: all 0.7s;
 }
 
@@ -959,23 +959,7 @@ ol {
 	transform: rotate(45deg);
 	opacity: 0;
 }
-.hero-items .off-cards {
-	height: 200px;
-	width: 200px;
-	padding-top: 40px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 100px;
-	position: absolute;
-	left: 47%;
-	top: 160px;
-	background: #ff0b02;
-	z-index: 1;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-	opacity: 0;
-}
+
  #Backg{
 	background: #ffffff5b;
 }
@@ -990,29 +974,14 @@ ol {
 	border-radius: 50%;
 	z-index: -1;
 }
-.hero-items .off-cards:after {
-	position: absolute;
-	left: 5px;
-	top: 5px;
-	width: calc(100% - 10px);
-	height: calc(100% - 10px);
-	border: 2px dashed #000000;
-	content: "";
-	border-radius: 50%;
-	z-index: -1;
-}
+
 .hero-items .off-card h2 {
-	font-size: 10px;
+	font-size: 32px;
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
 }
-.hero-items .off-cards h2 {
-	font-size: 10px;
-	font-weight: 700;
-	color: #000000;
-	text-transform: uppercase;
-}
+
 
 .hero-items .off-card h2 span {
 	display: block;
@@ -1022,14 +991,7 @@ ol {
 	text-transform: uppercase;
 	margin-top: 6px;
 }
-.hero-items .off-cards h2 span {
-	display: block;
-	font-size: 20px;
-	font-weight: 700;
-	color: #000000;
-	text-transform: uppercase;
-	margin-top: 6px;
-}
+
 
 .hero-items .owl-item.active .single-hero-items span,
 .hero-items .owl-item.active .single-hero-items h1,
@@ -4924,14 +4886,14 @@ input[type=radio] {
   justify-content: center;
   align-items: center;
 } */
-.container p {
+/* .container p {
   font-size: 3rem;
   padding: 0.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
-}
+} */
 .container p span.typed-text {
   font-weight: normal;
   color: #000000;
